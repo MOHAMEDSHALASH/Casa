@@ -1,0 +1,104 @@
+/* MEDIA => RESPONSIVE FILE */
+/* ===================================== */
+@media(max-width:900px){
+    .banner2{
+        flex-direction: column;
+    }
+    .banner2 .para{
+        width: 100%;
+    }
+    .banner3 .para{
+        flex-direction: column;
+        text-align: center;
+        padding: 2cm 20px;
+    }
+    .banner3 .para form input{
+        width: 100%;
+    }
+    .banner3 .para .right{
+        width: 80%;
+    }
+}
+
+@media(max-width:650px){
+    .head-items .links-items{
+        justify-content: flex-start;
+    }
+    main{
+        background-image: url(img/background\ -\ Copy.jpg);
+    }
+    main .main-page{
+        padding: 2cm 20px;
+    }
+    main .main-page h1{
+        font-size: 30px;
+    }
+    .cart-page .table-title{
+        display: none;
+    }
+    .head-items{
+        justify-content: flex-start;
+    }
+    .blog section img{
+        width: 3.5cm;
+    }
+    .blog{
+        width: 90%;
+    }
+    .about .about-para{
+        width: 90%;
+        flex-direction: column;
+    }
+    .about .about-para img{
+        width: 90%;
+    }
+    .about-app video{
+        width: 90%;
+    }
+}
+@media(max-width:630px){
+    .feature-productsHOME .products{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 1cm 0px;
+    }
+    .feature-productsHOME .products section h3{
+        font-size: 14px;
+    }
+}
+@media(max-width:500px){
+    .feature-page .title h1{
+        font-size: 35px;
+    }
+    .blog section{
+        flex-direction: column;
+    }
+    .blog section:nth-child(even){
+        direction: ltr !important;
+    }
+}
+@media(max-width:450px){
+    .head-items .bar-icon{
+        display: flex;
+    }
+    .head-items .links-items,
+    .head-items .links-items-open{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding: 15px;
+        background-color: #fff;
+        flex-direction: column;
+        top: -7.5cm;
+        z-index: -100;
+        box-shadow:inset 0px -20px 30px #ccc;
+    }
+    .head-items .links-items-open{
+        top: 1.4cm !important;
+    }
+}
+@media(max-width:375px){
+    body{
+        width: 375px;
+    }
+}
