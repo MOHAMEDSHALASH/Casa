@@ -577,11 +577,11 @@ main .main-page .btn-shop-now{
 }
 .banner2 .para2{
     background-image: url(img/banner/b10.jpg);
-    right: -110%;
+    left: -110%;
 }
 @keyframes banner22{
-    from{right: -110%;}
-    to{right: 0;}
+    from{left: -110%;}
+    to{left: 0;}
 }
 .banner2 .para button{
     background-color: transparent;
