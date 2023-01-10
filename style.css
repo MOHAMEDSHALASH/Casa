@@ -913,6 +913,102 @@ footer{
     width: 70%;
     margin: 20px;
 }
+/* ================================================================================================ */
+/* ================================================================================================ */
+/* ================================================================================================ */
+/* ================================================================================================ */
+/* =============================== CONTACT PAGE => FIVE PAGE============================================= */
+
+/* =========== START BANNER4 ======= */
+.banner8{
+    background-image: url(img/banner/b2.jpg);
+    opacity: 1;
+}
+.banner8 .para{
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+/* =========== END BANNER4 ======= */
+
+/* contact */
+.contact{
+    display: flex;
+    padding: 1cm;
+    gap: 1cm;
+}
+.contact .left{
+    line-height: 1.8;
+}
+.contact .left nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.contact .left nav span{
+    color: var(--main-color);
+}
+.contact .right{
+    flex: 1;
+}
+.contact iframe{
+    width: 100%;
+    height: 8cm;
+}
+/* ============ START FORM ============== */
+.form-contact{
+    padding: 20px;
+    margin: 1cm;
+    position: relative;
+    overflow: hidden;
+}
+.form-contact::before{
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: 0%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(#ccc,#008178,#ccc);
+    z-index: -2;
+    animation: 10s contact infinite alternate;
+}
+@keyframes contact{
+    from{}
+    to{
+        transform: rotate(360deg) skewX(30deg) skewY(-30deg);
+    }
+}
+.form-contact form{
+    padding: 1cm;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-contact form input,
+.form-contact form textarea{
+    padding: 13px;
+    border: none;
+    box-shadow: 0 8px 64px rgba(0, 0, 0, 0.078);
+    border-radius: 5px;
+    outline: none;
+}
+.form-contact form button{
+    width: 4cm;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+.form-contact form button:hover{
+    background-color: #13958c;
+}
+/* ============ END FORM ============== */
+
 
 
 
