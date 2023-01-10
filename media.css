@@ -96,6 +96,12 @@
     .head-items .links-items-open{
         top: 1.4cm !important;
     }
+        .msg-buy{
+        display: none;
+    }
+    .head-items .msg-link{
+        display: none;
+    }
 }
 @media(max-width:375px){
     body{
