@@ -102,6 +102,9 @@
     .head-items .msg-link{
         display: none;
     }
+        .form-contact form button{
+        width: 100%;
+    }
 }
 @media(max-width:375px){
     body{
