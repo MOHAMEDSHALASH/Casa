@@ -18,6 +18,9 @@
     .banner3 .para .right{
         width: 80%;
     }
+        .contact{
+        flex-direction: column;
+    }
 }
 
 @media(max-width:650px){
