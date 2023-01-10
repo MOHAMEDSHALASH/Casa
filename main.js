@@ -25,12 +25,11 @@ document.querySelector('.close-cart-page').addEventListener('click',()=>{
 let barBtn=document.getElementById('bar-icon');
 let bar=document.querySelector('.head-items .links-items');
 let barLink=document.querySelectorAll('.head-items .links-items a');
-    if(window.innerWidth>=450){
         barLink.forEach(link=>{
-            // link.addEventListener('click',()=>{
-            //     barBtn.classList.remove('bar-icon-close')
-            //     bar.classList.remove('links-items-open')
-            // })
+             link.addEventListener('click',()=>{
+                 barBtn.classList.remove('bar-icon-close')
+                 bar.classList.remove('links-items-open')
+             })
             link.addEventListener('mouseover',(e)=>{
                 let msgLink=document.createElement('div');
                 msgLink.className="msg-link";
@@ -42,7 +41,6 @@ let barLink=document.querySelectorAll('.head-items .links-items a');
                 span.remove()
             })
         })
-    }
     barBtn.onclick=()=>{
         barBtn.classList.toggle('bar-icon-close')
         bar.classList.toggle('links-items-open')
